@@ -3,15 +3,15 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "Build CPP with GCC 11.2.0",
+			"label": "Build C with GCC 11.2.0",
 			"command": "C:\\MinGW64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
 				"-std=c++20",
-				"${workspaceFolder}\\*.cpp",
+				"${workspaceFolder}\\*.c",
 				"-o",
-				"${fileDirname}\\out.exe"
+				"${fileDirname}\\cout.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -27,15 +27,15 @@
 		},
 		{
 			"type": "cppbuild",
-			"label": "Build CPP with Clang++ 13.0.0",
+			"label": "Build C with Clang++ 13.0.0",
 			"command": "C:\\MinGW64\\bin\\clang++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
 				"-std=c++20",
-				"${workspaceFolder}\\*.cpp",
+				"${workspaceFolder}\\*.c",
 				"-o",
-				"${fileDirname}\\out.exe"
+				"${fileDirname}\\cout.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -48,7 +48,7 @@
 		},
 		{
 			"type": "cppbuild",
-			"label": "Build C/CPP with MSVC",
+			"label": "Build C with MSVC",
 			"command": "cl.exe",
 			"args": [
 				"/Zi",
@@ -56,8 +56,8 @@
 				"/EHsc",
 				"/nologo",
 				"/Fe:",
-				"${fileDirname}\\out.exe",
-				"${workspaceFolder}\\*.cpp"
+				"${fileDirname}\\cout.exe",
+				"${workspaceFolder}\\*.c"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

@@ -8,10 +8,13 @@ int main(){
 	int num3 = 0x0f;		//Hex (has leading 0x)
 	int num4 = 0b00001111;	//Binary (has leading 0b)
 
+
 	cout << endl << num1 << endl;
 	cout << num2 << endl;
 	cout << num3 << endl;
 	cout << num4 << endl << endl;
 
-	return 0;
+cout << "Int size: " << sizeof(int) << endl;
+
+return 0;
 }
